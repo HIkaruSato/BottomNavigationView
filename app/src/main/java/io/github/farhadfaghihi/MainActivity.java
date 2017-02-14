@@ -26,15 +26,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         textView = (TextView)findViewById(R.id.textview) ;
 
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
-
         disableShiftMode(bottomNavigationView);
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
         textView.setText(item.getTitle());
-
+        item.setChecked(true);
+        //item.setTitle("10,000円");
         return false;
     }
 

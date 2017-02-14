@@ -22,13 +22,12 @@
         <android.support.design.widget.BottomNavigationView
             android:id="@+id/bottomnavigationview"
             app:menu="@menu/navigation"
-            app:itemTextColor="@color/grey"
+            app:itemTextColor="@color/bottom_navigation"
+            app:itemIconTint="@color/bottom_navigation"
             android:background="@color/colorPrimary"
-            app:itemIconTint="@color/grey"
             android:layout_gravity="start|bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
         </android.support.design.widget.BottomNavigationView>
 
     </FrameLayout>
